@@ -2,26 +2,32 @@
   <head>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <!-- Material Design fonts -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap Material Design -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/bootstrap-material-design.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/ripples.min.css" rel="stylesheet">
+    <!-- Bootstrap Material Design -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/css/ripples.min.css" rel="stylesheet">
 
-  <link href="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+    <link href="http://fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- App files -->
     <script src="js/main.js"></script>
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <center>
-      <textarea id="decode" cols="40" rows="10" class="form-control"></textarea>
-      <br></br>
-      <a class="btn btn-raised btn-info" data-ripple-color="#F0F0F0" onclick="decrypt()">Decryptar</a>
-      <br></br>
-      <textarea id="decoded" cols="40" rows="10" class="form-control"></textarea>
+    <center class="container">
+      <h1>Mini HTML decoder</h1>
+      <textarea id="decode" cols="40" rows="10" class="form-control textarea-custom"></textarea>
+      <a class="btn btn-raised btn-info" onclick="decrypt()">Decode!</a>
+      <textarea id="decoded" cols="40" rows="10" class="form-control textarea-custom" disabled></textarea>
+      <p>Created by <a href="https://www.youtube.com/channel/UCKh05S6KKo3nhhYIbU4i2KA" class="youtube"><i class="fa fa-youtube-play"></i>BeeCoding</a></p>
     </center>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.9/js/ripples.min.js"></script>
